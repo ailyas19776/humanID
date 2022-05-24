@@ -6,9 +6,9 @@
 * Enables platforms to decrease the cost of monitoring and moderating content, eliminates the significant business risk of data leaks, and appeals to a growing audience of privacy-focused consumers. 
 
 
-<div align="center">
-  <img src="https://www.bizjournals.com/boston/inno/stories/news/2019/10/15/this-new-sign-in-service-brings-accountability.html" />
-</div>
+<p align="center">
+  <img src="img/fingerprint.png" />
+</p>
 
 
 
