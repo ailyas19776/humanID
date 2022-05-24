@@ -330,7 +330,10 @@ humanID provides an API for validating ExchangeToken. This API is called by the 
 
 ## Conclusion
 ### Our Vision
-humanID battles the dangers of unsafe logins by allowing users to sign in anonymously using the one person, one voice model that has upheld democracies for generations. We care about online communities flourishing, and are using technology to create the visionary online communities of the future. By requiring authentication through a unique phone number and setting strict limits on device switching, we are making it more difficult for cyberbullies, bot accounts, and spammers to abuse websites and apps. Privacy on the internet is extremely important to an increasing number of users. We treasure privacy; humanID never permanently stores personal information and complies with major data privacy laws such as HIPAA, GDPR, and CCPA. Our model is the SSO convenience of Google and Facebook logins without data mining, profit motives, or user tracking.
+humanID battles the dangers of unsafe logins by allowing users to sign in anonymously using the one person, one voice model that has upheld democracies for generations. We care about online communities flourishing, and are using technology to create the visionary online communities of the future. By requiring authentication through a unique phone number and setting strict limits on device switching, we are making it more difficult for cyberbullies, bot accounts, and spammers to abuse websites and apps. 
+
+
+Privacy on the internet is extremely important to an increasing number of users. **We treasure privacy**; humanID never permanently stores personal information and complies with major data privacy laws such as HIPAA, GDPR, and CCPA. Our model is the SSO convenience of Google and Facebook logins without data mining, profit motives, or user tracking.
 
 
 ### The Power of Open Source
