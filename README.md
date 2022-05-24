@@ -1,8 +1,8 @@
 ## Summary
 
 ### humanID
-* Creates a fully anonymous, privacy-first identity that enables communities to block bots and abusive users. 
-* Protects the identity of its users through an irreversible hash, generating an ID that is unique to each user and platform the user is logging into.
+* Creates a **fully anonymous, privacy-first identity** that enables communities to block bots and abusive users. 
+* Protects the identity of its users through an **irreversible hash**, generating an ID that is unique to each user and platform the user is logging into.
 * Enables platforms to decrease the cost of monitoring and moderating content, eliminates the significant business risk of data leaks, and appeals to a growing audience of privacy-focused consumers. 
 
 
@@ -24,12 +24,14 @@ humanID's leadership team includes experienced cybersecurity experts, seasoned e
 ### Why humanID
 
 
-* 40 billion data records were breached in 2021, costing U.S. companies an average of $4.24M in damages. Data breaches not only damage the trust that users place in information technologies; financial and reputational costs also represent an existential threat to businesses. 
-*  Stronger privacy leads to better conversion and engagement rates — research conducted by the Symposium on Usable Privacy and Security has shown that users who feel that their privacy is protected are more likely to engage with an online service.
+* [40 billion data records](https://www.securitymagazine.com/articles/96946-over-40-billion-records-were-exposed-in-2021) were breached in 2021, costing U.S. companies an average of $4.24M in damages. Data breaches not only damage the trust that users place in information technologies; financial and reputational costs also represent an existential threat to businesses. 
+*  Stronger privacy leads to better conversion and engagement rates —  [research conducted by the Symposium on Usable Privacy and Security](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/38142.pdf) has shown that users who feel that their privacy is protected are more likely to engage with an online service.
 * Without an accountable and persistent online ID, threatening actors can exploit online platforms by registering malicious accounts and creating networks of bots. These networks can manipulate everything from reviews and ranking algorithms to public opinions and elections.
 * Online communities are polluted by bots, spam, and bullies, which makes online trust and safety rules difficult to enforce. 
-* Distrust of Big Tech is rising, leading users to reject current authentication methods such as “Login with Facebook”. 
-By bringing back security, privacy and accountability, humanID enables safe and civil online communities of the future.   
+* Distrust of Big Tech is [rising](https://www.axios.com/2020/02/25/big-tech-industry-global-trust), leading users to reject current authentication methods such as “Login with Facebook”. 
+
+
+**By bringing back security, privacy and accountability, humanID enables safe and civil online communities of the future.   **
 
 
 
@@ -49,7 +51,7 @@ By bringing back security, privacy and accountability, humanID enables safe and 
 ### How Does humanID Compare?
 
 
-humanID creates a fully anonymous, privacy-first identity that enables communities to block bots and abusive users—leading to accountable, civil communities.
+**humanID creates a fully anonymous, privacy-first identity that enables communities to block bots and abusive users—leading to accountable, civil communities.**
 
 
 We match Facebook’s login in terms of convenience for use and integration, while offering total privacy and anonymity to end users and a plug-and-play SDK for developers. 
@@ -106,11 +108,21 @@ The results are increased sign-up and engagement rates for communities and platf
 The diagram below consists of three parts:
 
 
-1. Business Client
-Business Client is the partner/3rd Party App. This is the client that needs to Request Access Token and Request Resource from the ResourceServer. The client app can be either a mobile or web-based application.
-2. OAuth Server
-humanID implements standard OAuth2 implementation, and hosts OAuth server by default. OAuth Server can also be self-hosted by 3rd Parties.
-3. Resource Server
+1. **Business Client**
+
+
+Business Client is the partner/3rd Party App. This is the client that needs to **Request Access Token** and **Request Resource** from the ResourceServer. The client app can be either a mobile or web-based application.
+
+
+2. **OAuth Server**
+
+
+**humanID** implements standard OAuth2 implementation, and hosts OAuth server by default. OAuth Server can also be self-hosted by 3rd Parties.
+
+
+3. **Resource Server**
+
+
 Resource Server is the 3rd Party API server that has the resources that are needed by BusinessClient. Hosted by a 3rd Party.
 
 
@@ -148,31 +160,48 @@ Redirect URLs are used to  configure where the user is redirected to after a suc
 
 
 #### Credentials
+
+
 Credentials form the basis of integration with humanID. Credentials can be one of two types—**Development** or **Production**—and one of two environments—**Mobile** or **Server**.
 
 
 All credentials additionally have a **Client ID** and a **Client Secret** automatically generated on creation. Credentials can be marked as **Active** and **Inactive**. They can also be deleted and regenerated.  If a credential is regenerated while in use, it will break integration.
 
-
-##### Development Credentials
+>>> ##### 1. Development Credentials
 Development Credentials are designed for development purposes only and should not be used in production. Development Credentials allow access to the Sandbox for cost-free testing (see below).
-##### Production Credentials
+
+>>> ##### 2. Production Credentials
 Production Credentials are designed for production purposes only. Utilizing Production Credentials in development will incur cost for the app or, if the balance is at zero, will cause the app to not send SMS messages.
-##### Mobile Credentials
+
+
+>>> ##### 3. Mobile Credentials
 Mobile Credentials are designed for humanID’s Android and iOS SDKs. When creating a Mobile Credential, a **Mobile Platform** and **Package ID** must be specified.
-###### Mobile Platform
+
+>>>>>> ###### Mobile Platform
 The Mobile Platform can be either Android or iOS depending on the integration.
-###### Package ID
+
+
+>>>>>> ###### Package ID
 The Package ID can be any string. We recommend following [Java package naming conventions](https://docs.oracle.com/javase/specs/jls/se6/html/packages.html#7.7).
-##### Server Credentials
+
+
+>>> ##### 4. Server Credentials
 Server Credentials are designed for non-mobile web-based applications. They are also designed to be used in any backend. These credentials are utilized in the general Web SDK, GoLang SDK, React Native SDK, and Flutter SDK.
-###### *Client ID*
+
+
+>>> ###### *Client ID*
 The Client ID is a key which acts as a public identifier for the application, and can be included in source code and login URLs. This key is also used to communicate with the humanID API. This key does not need to be kept confidential.
-###### *Client Secret*
+
+
+>>> ###### *Client Secret*
 The Client Secret is a second key which is used to authenticate the application for its delegated Authorization Server, and grant tokens only to authorized parties. This key is also used to communicate with the humanID API. This key must always be kept confidential. .
-###### *App ID*
+
+
+  ###### *App ID*
 The App ID (Application ID) is a unique ID for each app that uses humanID. App ID will be auto-generated by the humanID server and cannot be changed by the client.
 **Example App ID:**  Z5R1Y0ESLZD3CX7Z
+
+
 ###### Documentation
 Documentation can be accessed via the developer console or directly [here](https://docs.human-id.org/). Guides for the currently offered SDKs and an example integration of a generic web application are provided.
 ###### Sandbox
