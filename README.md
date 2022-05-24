@@ -69,7 +69,7 @@ Unlike Facebook and similar social media corporations, we have no financial ince
 Many private startups have recognized the clear need for a solution but suffer from similar incentive reasons. Blockchain-based companies build independent technology, but frequently make it difficult for users and developers to understand—and adopt—their technology.
 
 
-  
+  <br></br>
 
 ### How Does It Work?
 
@@ -135,7 +135,7 @@ Resource Server is the 3rd Party API server that has the resources that are need
 
 *Step 5 indicates POST request*
 
-
+<br></br>
 ### humanID Implementation
 To integrate humanID with a 3rd Party App, developers are required to use the [humanID developer console](https://developers.human-id.org/home/). To use the developer console, create a new account by clicking  the “register” button or log in with an existing account.  
 
@@ -148,18 +148,19 @@ Developers can customize their applications with options such as their **Project
 
 Along with these custom options, each application is given an **App ID**.
 
-
+<br></br>
 #### Project Icon
 
 
 The Project Icon will be displayed to users who log in through humanID. This icon must be a square PNG, JPG, or JPEG file of a size less than 2MB. If no icon is uploaded, a default icon will be given to the project.
 
-
+<br></br>
 #### Contributors
 
 
 Contributors can be added by email. This email must be associated with a humanID developer account. Contributors can be added as an Owner, Manager, or Member. Once added, the Project will appear in the contributor’s Dashboard and they will receive an email. Contributors can be edited or deleted, but cannot edit their own permissions.
 
+<br></br>
 
 #### Redirect URLs
 Redirect URLs are used to  configure where the user is redirected to after a successful or failed login using humanID. They **must** be configured for the Application to work appropriately.
@@ -172,12 +173,15 @@ Credentials form the basis of integration with humanID. Credentials can be one o
 
 
 All credentials additionally have a **Client ID** and a **Client Secret** automatically generated on creation. Credentials can be marked as **Active** and **Inactive**. They can also be deleted and regenerated.  If a credential is regenerated while in use, it will break integration.
+<br></br>
 
 #### Development Credentials
 Development Credentials are designed for development purposes only and should not be used in production. Development Credentials allow access to the Sandbox for cost-free testing (see below).
+<br></br>
 
-##### Production Credentials
+#### Production Credentials
 Production Credentials are designed for production purposes only. Utilizing Production Credentials in development will incur cost for the app or, if the balance is at zero, will cause the app to not send SMS messages.
+<br></br>
 
 
 #### Mobile Credentials
