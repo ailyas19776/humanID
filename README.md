@@ -1,10 +1,12 @@
 ## Summary
+
 ### humanID
 * Creates a fully anonymous, privacy-first identity that enables communities to block bots and abusive users. 
 * Protects the identity of its users through an irreversible hash, generating an ID that is unique to each user and platform the user is logging into.
 * Enables platforms to decrease the cost of monitoring and moderating content, eliminates the significant business risk of data leaks, and appeals to a growing audience of privacy-focused consumers. 
-Overview
 
+
+### Overview
 
 humanID is a nonprofit, open-source initiative building a replacement to social media logins such as “Login with Facebook” and other invasive tools such as Google’s reCAPTCHA. Unlike existing logins, humanID has developed technologies that massively increase the cost for automated accounts, bots, and previously banned users to return to a website. humanID also allows users to sign onto third-party websites or apps with total anonymity, creating higher levels of trust and protection from data breaches. Our model is fully GDPR/CCPA-compliant.
 
@@ -99,45 +101,69 @@ The results are increased sign-up and engagement rates for communities and platf
   
 
 ### System Architecture Diagram
+
+
 The diagram below consists of three parts:
+
+
 1. Business Client
 Business Client is the partner/3rd Party App. This is the client that needs to Request Access Token and Request Resource from the ResourceServer. The client app can be either a mobile or web-based application.
 2. OAuth Server
 humanID implements standard OAuth2 implementation, and hosts OAuth server by default. OAuth Server can also be self-hosted by 3rd Parties.
 3. Resource Server
 Resource Server is the 3rd Party API server that has the resources that are needed by BusinessClient. Hosted by a 3rd Party.
-  [c][d][e][f][g][h]
+
 
 
 *Step 5 indicates POST request*
 
 
 ### humanID Implementation
-To integrate humanID with a 3rd Party App, developers are required to use the humanID developer console. To use the developer console, create a new account by clicking  the “register” button or log in with an existing account.  
-After signing up, developers can create an Application in the Dashboard. An Application is referred to as a Project. Upon creation, the developer will name the Project. Users will see this name when logging in with humanID. It can be changed at any time.
-Developers can customize their applications with options such as Project Icon, Contributors, Redirect URLs, and Credentials.
-Along with these custom options, each application is given an App ID.
+To integrate humanID with a 3rd Party App, developers are required to use the [humanID developer console](https://developers.human-id.org/home/). To use the developer console, create a new account by clicking  the “register” button or log in with an existing account.  
+
+
+After signing up, developers can create an Application in the Dashboard. An Application is referred to as a **Project**. Upon creation, the developer will name the Project. Users will see this name when logging in with humanID. It can be changed at any time.
+
+
+Developers can customize their applications with options such as their **Project Icon, Contributors, Redirect URLs,** and **Credentials**.
+
+
+Along with these custom options, each application is given an **App ID**.
+
+
 #### Project Icon
+
+
 The Project Icon will be displayed to users who log in through humanID. This icon must be a square PNG, JPG, or JPEG file of a size less than 2MB. If no icon is uploaded, a default icon will be given to the project.
+
+
 #### Contributors
+
+
 Contributors can be added by email. This email must be associated with a humanID developer account. Contributors can be added as an Owner, Manager, or Member. Once added, the Project will appear in the contributor’s Dashboard and they will receive an email. Contributors can be edited or deleted, but cannot edit their own permissions.
+
+
 #### Redirect URLs
-Redirect URLs are used to  configure where the user is redirected to after a successful or failed login using humanID. They must be configured for the Application to work appropriately.
+Redirect URLs are used to  configure where the user is redirected to after a successful or failed login using humanID. They **must** be configured for the Application to work appropriately.
+
+
 #### Credentials
-Credentials form the basis of integration with humanID. Credentials can be one of two types—Development or Production—and one of two environments—Mobile or Server.
+Credentials form the basis of integration with humanID. Credentials can be one of two types—**Development** or **Production**—and one of two environments—**Mobile** or **Server**.
 
 
-All credentials additionally have a Client ID and a Client Secret automatically generated on creation. Credentials can be marked as Active and Inactive. They can also be deleted and regenerated.  If a credential is regenerated while in use, it will break integration.
+All credentials additionally have a **Client ID** and a **Client Secret** automatically generated on creation. Credentials can be marked as **Active** and **Inactive**. They can also be deleted and regenerated.  If a credential is regenerated while in use, it will break integration.
+
+
 ##### Development Credentials
 Development Credentials are designed for development purposes only and should not be used in production. Development Credentials allow access to the Sandbox for cost-free testing (see below).
 ##### Production Credentials
 Production Credentials are designed for production purposes only. Utilizing Production Credentials in development will incur cost for the app or, if the balance is at zero, will cause the app to not send SMS messages.
 ##### Mobile Credentials
-Mobile Credentials are designed for humanID’s Android and iOS SDKs. When creating a Mobile Credential, a Mobile Platform and Package ID must be specified.
+Mobile Credentials are designed for humanID’s Android and iOS SDKs. When creating a Mobile Credential, a **Mobile Platform** and **Package ID** must be specified.
 ###### Mobile Platform
 The Mobile Platform can be either Android or iOS depending on the integration.
 ###### Package ID
-The Package ID can be any string. We recommend following Java package naming conventions.
+The Package ID can be any string. We recommend following [Java package naming conventions](https://docs.oracle.com/javase/specs/jls/se6/html/packages.html#7.7).
 ##### Server Credentials
 Server Credentials are designed for non-mobile web-based applications. They are also designed to be used in any backend. These credentials are utilized in the general Web SDK, GoLang SDK, React Native SDK, and Flutter SDK.
 ###### *Client ID*
@@ -148,11 +174,11 @@ The Client Secret is a second key which is used to authenticate the application 
 The App ID (Application ID) is a unique ID for each app that uses humanID. App ID will be auto-generated by the humanID server and cannot be changed by the client.
 **Example App ID:**  Z5R1Y0ESLZD3CX7Z
 ###### Documentation
-Documentation can be accessed via the developer console or directly here. Guides for the currently offered SDKs and an example integration of a generic web application are provided.
+Documentation can be accessed via the developer console or directly [here](https://docs.human-id.org/). Guides for the currently offered SDKs and an example integration of a generic web application are provided.
 ###### Sandbox
 **Sandbox Setup:**
-   1. In the developer console, navigate to the Sandbox tab.
-   2. Click the Add Phone Number drop-down menu.
+   1. In the developer console, navigate to the **`Sandbox`** tab.
+   2. Click the **`Add Phone Number`** drop-down menu.
    3. Add a phone number and select the app you want to use it for.
 
 
