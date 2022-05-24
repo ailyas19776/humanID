@@ -11,6 +11,8 @@
 </p>
 
 
+<br/>
+
 
 ### Overview
 
@@ -24,7 +26,7 @@ humanID's leadership team includes experienced cybersecurity experts, seasoned e
 
 
 
-
+<br/>
 
 
 ### Why humanID
@@ -48,6 +50,7 @@ humanID's leadership team includes experienced cybersecurity experts, seasoned e
 
 
 
+  <br/>
 
 
 
@@ -69,7 +72,7 @@ Unlike Facebook and similar social media corporations, we have no financial ince
 Many private startups have recognized the clear need for a solution but suffer from similar incentive reasons. Blockchain-based companies build independent technology, but frequently make it difficult for users and developers to understand—and adopt—their technology.
 
 
-  <br></br>
+  <br/>
 
 ### How Does It Work?
 
@@ -80,6 +83,8 @@ Following the initial verification, humanID generates a cryptographic hash uniqu
 
 
 humanID does not keep user data; privacy is ensured by deleting data after verification and never transferring or communicating it to our partners. Services such as health apps, social networks, virtual private networks (VPNs), or even a COVID-19 spread tracker can be accessed anonymously.
+
+<br/>
 
 
 **Example implementation:**
@@ -103,6 +108,8 @@ humanID blocks automated accounts, cyberbullies, trolls, and those who abuse fre
 The results are increased sign-up and engagement rates for communities and platforms, decreased moderation and monitoring costs, better enforcement of rules and paywalls, improved customer experience, and the ability to turn privacy and trust into a competitive advantage.
 
 
+
+<br/>
 
 
 ## High-Level Specifications 
@@ -135,7 +142,9 @@ Resource Server is the 3rd Party API server that has the resources that are need
 
 *Step 5 indicates POST request*
 
-<br></br>
+<br/>
+
+
 ### humanID Implementation
 To integrate humanID with a 3rd Party App, developers are required to use the [humanID developer console](https://developers.human-id.org/home/). To use the developer console, create a new account by clicking  the “register” button or log in with an existing account.  
 
@@ -148,23 +157,31 @@ Developers can customize their applications with options such as their **Project
 
 Along with these custom options, each application is given an **App ID**.
 
-<br></br>
-#### Project Icon
+
+<br/>
 
 
-The Project Icon will be displayed to users who log in through humanID. This icon must be a square PNG, JPG, or JPEG file of a size less than 2MB. If no icon is uploaded, a default icon will be given to the project.
-
-<br></br>
-#### Contributors
+&emsp;&emsp;&emsp;**Project Icon**
 
 
-Contributors can be added by email. This email must be associated with a humanID developer account. Contributors can be added as an Owner, Manager, or Member. Once added, the Project will appear in the contributor’s Dashboard and they will receive an email. Contributors can be edited or deleted, but cannot edit their own permissions.
+&emsp;&emsp;&emsp;The Project Icon will be displayed to users who log in through humanID. This icon must be a square PNG, JPG, or JPEG file of a size less than 2MB. If no icon is uploaded, a default icon will be given to the project.
 
-<br></br>
+<br/>
 
-#### Redirect URLs
-Redirect URLs are used to  configure where the user is redirected to after a successful or failed login using humanID. They **must** be configured for the Application to work appropriately.
 
+&emsp;&emsp;&emsp;**Contributors**
+
+
+&emsp;&emsp;&emsp;Contributors can be added by email. This email must be associated with a humanID developer account. Contributors can be added as an Owner, Manager, or Member. Once added, the Project will appear in the contributor’s Dashboard and they will receive an email. Contributors can be edited or deleted, but cannot edit their own permissions.
+
+<br/>
+
+&emsp;&emsp;&emsp;**Redirect URLs**
+
+&emsp;&emsp;&emsp;Redirect URLs are used to  configure where the user is redirected to after a successful or failed login using humanID. They **must** be configured for the Application to work appropriately.
+
+
+<br/>
 
 ## Credentials
 
@@ -173,15 +190,21 @@ Credentials form the basis of integration with humanID. Credentials can be one o
 
 
 All credentials additionally have a **Client ID** and a **Client Secret** automatically generated on creation. Credentials can be marked as **Active** and **Inactive**. They can also be deleted and regenerated.  If a credential is regenerated while in use, it will break integration.
-<br></br>
+
+
+<br/>
 
 #### Development Credentials
 Development Credentials are designed for development purposes only and should not be used in production. Development Credentials allow access to the Sandbox for cost-free testing (see below).
-<br></br>
+
+
+<br/>
 
 #### Production Credentials
 Production Credentials are designed for production purposes only. Utilizing Production Credentials in development will incur cost for the app or, if the balance is at zero, will cause the app to not send SMS messages.
-<br></br>
+
+
+<br/>
 
 
 #### Mobile Credentials
@@ -198,6 +221,8 @@ Mobile Credentials are designed for humanID’s Android and iOS SDKs. When creat
 
 &emsp;&emsp;&emsp; The Package ID can be any string. We recommend following [Java package naming conventions](https://docs.oracle.com/javase/specs/jls/se6/html/packages.html#7.7).
 
+
+<br/>
 
 #### Server Credentials
 
@@ -226,8 +251,14 @@ Server Credentials are designed for non-mobile web-based applications. They are 
 &emsp;&emsp;&emsp; **Example App ID:**  Z5R1Y0ESLZD3CX7Z
 
 
+<br/>
+
+
 ## Documentation
 Documentation can be accessed via the developer console or directly [here](https://docs.human-id.org/). Guides for the currently offered SDKs and an example integration of a generic web application are provided.
+
+
+<br/>
 
 
 ## Sandbox
@@ -246,6 +277,8 @@ Documentation can be accessed via the developer console or directly [here](https
 
 When an OTP (One-Time Password) is requested from the app to the specified phone number, the OTP will be forwarded to the sandbox instead of being sent as an SMS.
 
+
+<br/>
 
 ## humanID Account Generation 
 
@@ -332,12 +365,17 @@ The exchange token will be returned to the EndUser (e.g. web-based app or Androi
 humanID provides an API for validating ExchangeToken. This API is called by the 3rd party app server.  humanID determines whether a given ExchangeToken is valid or not.
   
 
+<br/>
+
 ## Conclusion
 ### Our Vision
 humanID battles the dangers of unsafe logins by allowing users to sign in anonymously using the one person, one voice model that has upheld democracies for generations. We care about online communities flourishing, and are using technology to create the visionary online communities of the future. By requiring authentication through a unique phone number and setting strict limits on device switching, we are making it more difficult for cyberbullies, bot accounts, and spammers to abuse websites and apps. 
 
 
 Privacy on the internet is extremely important to an increasing number of users. **We treasure privacy**; humanID never permanently stores personal information and complies with major data privacy laws such as HIPAA, GDPR, and CCPA. Our model is the SSO convenience of Google and Facebook logins without data mining, profit motives, or user tracking.
+
+
+<br/>
 
 
 ### The Power of Open Source
@@ -348,8 +386,12 @@ Our model is also open source - this means anyone may view our code and keep us 
    * 70% said they would prefer to use an open-source online cloud platform
    * 64.5% preferred skills related to open-source technology
 
+<br/>
+
 
 **humanID’s open source nature puts power back into the hands of end-users and the people.**
+
+<br/>
 
 
 ### About Us
