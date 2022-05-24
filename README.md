@@ -109,7 +109,7 @@ Following the initial verification, humanID generates a cryptographic hash uniqu
 humanID does not keep user data; privacy is ensured by deleting data after verification and never transferring or communicating it to our partners. Services such as health apps, social networks, virtual private networks (VPNs), or even a COVID-19 spread tracker can be accessed anonymously.
 
 
-Example implementation:  
+**Example implementation: **
 
 
 To experience the ease of humanID yourself, try it [here!](https://web-login.human-id.org/demo/)
@@ -204,24 +204,54 @@ humanID Account ID refers to the unique account we generate for each user. We id
 When a user enters their phone number to login with humanID, it must identify whether the user already has an account. To do this, a unique ID is generated for each phone number. 
 To generate a unique ID, we create a hash from the phone number. A hash is a one-way function where plain text is used to create a complicated string (sequence of characters from an input) called a hash value.
 When a user enters their phone number to log in, we check if their phone number has a corresponding hash value in our database. If a corresponding value exists, they are logged in.
+
+
 #### Hashing Details
+
+
 **Formula:**
+
+
 *hash (x) = y*
+
+
 **Example | Hash  Formula in Use:**
-*hash(“6281287765551”) = 22bf509dee216179e84ad2ec7d417e6dc56558d6f9ac3714874d06baa9621a42*
+
+
+*`hash(“6281287765551”) = 22bf509dee216179e84ad2ec7d417e6dc56558d6f9ac3714874d06baa9621a42`*
+
+
 humanID uses the **SHA512** hash.
+
+
 #### Adding Salt Key Before Hash
 To make the hash more difficult to brute force cyberattacks, we concatenate the phone number with a Salt Key (a string that is appended before the plain text; see below for detail). 
+
+
 **Formula:**
-sha512hash ( Salt_Key + Phone Number ) =  Hash
+
+`sha512hash ( Salt_Key + Phone Number ) =  Hash`
+
+
 The Salt Key is a combination of lowercase letters, uppercase letters, and numbers. Since the SHA512 hash is 64-bits, the recommended salt key is 64-bits.
+
 **Example | Adding Salt Key Before Hash:**
-Example Salt Key: *2xMnLp9uXcMgHzBgTvDg1LmaX2z8z0q4KvL*
-Example Phone Number: 6281287765551 
+
+
+Example Salt Key: *`2xMnLp9uXcMgHzBgTvDg1LmaX2z8z0q4KvL`*
+
+
+Example Phone Number: `6281287765551` 
    1. Salt Key and Phone Number are appended, then hashed.
-sha512hash ( *2xMnLp9uXcMgHzBgTvDg1LmaX2z8z0q4KvL + 6281287765551* )
+
+
+
+*`sha512hash ( 2xMnLp9uXcMgHzBgTvDg1LmaX2z8z0q4KvL + 6281287765551 )`*
+
+
    2. SHA512 hashing algorithm produces the Hash.
-*65426599e640526d2f18789bcd994dacb721b92d8a2fd7a12a499c417ca84f7c*
+
+*`65426599e640526d2f18789bcd994dacb721b92d8a2fd7a12a499c417ca84f7c`*
 
 
 **The hash created through this process is a user’s humanID Account ID.**
