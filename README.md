@@ -18,9 +18,7 @@
 
 humanID is a nonprofit, open-source initiative building a replacement to social media logins such as “Login with Facebook” and other invasive tools such as Google’s reCAPTCHA. Unlike existing logins, humanID has developed technologies that massively increase the cost for automated accounts, bots, and previously banned users to return to a website. humanID also allows users to sign onto third-party websites or apps with total anonymity, creating higher levels of trust and protection from data breaches. Our model is fully GDPR/CCPA-compliant.
 
-
 The team is proud of our robust and diverse leadership on both technical and business aspects. Together, we are building world-class technology as public 
-&NewLine;
 infrastructure for the web of tomorrow.
 
 
