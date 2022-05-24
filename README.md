@@ -7,7 +7,7 @@
 
 
 <p align="center">
-  <img src="img/fingerprint.png" />
+  <img src="fingerprint.png" />
 </p>
 
 
