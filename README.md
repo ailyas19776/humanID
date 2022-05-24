@@ -35,8 +35,8 @@ The Power of Open Source        16
 About Us        16
 App Server Secret Key        17
 App Client Key        17
-Summary
-humanID
+## Summary
+### humanID
 * Creates a fully anonymous, privacy-first identity that enables communities to block bots and abusive users. 
 * Protects the identity of its users through an irreversible hash, generating an ID that is unique to each user and platform the user is logging into.
 * Enables platforms to decrease the cost of monitoring and moderating content, eliminates the significant business risk of data leaks, and appeals to a growing audience of privacy-focused consumers. 
@@ -56,7 +56,7 @@ humanID's leadership team includes experienced cybersecurity experts, seasoned e
 
 
 
-Why humanID
+### Why humanID
 
 
 * 40 billion data records were breached in 2021, costing U.S. companies an average of $4.24M in damages. Data breaches not only damage the trust that users place in information technologies; financial and reputational costs also represent an existential threat to businesses. 
@@ -81,7 +81,7 @@ By bringing back security, privacy and accountability, humanID enables safe and 
 
 
 
-How Does humanID Compare?
+### How Does humanID Compare?
 
 
 humanID creates a fully anonymous, privacy-first identity that enables communities to block bots and abusive users—leading to accountable, civil communities.
@@ -98,7 +98,7 @@ Many private startups have recognized the clear need for a solution but suffer f
 
   
 
-How Does It Work?
+### How Does It Work?
 
 
 humanID carries out human authentication by requesting and verifying a user’s phone number. Phone numbers are credentials which are difficult to duplicate in large amounts and are not frequently changed per individual, providing higher trustworthiness for authentication in comparison to email addresses.
@@ -112,8 +112,7 @@ humanID does not keep user data; privacy is ensured by deleting data after verif
 Example implementation:  
 
 
-To experience the ease of humanID yourself, try it here!
- https://web-login.human-id.org/demo/
+To experience the ease of humanID yourself, try it [here!](https://web-login.human-id.org/demo/)
 
 
 humanID is and will be free for end users. 
@@ -133,10 +132,10 @@ The results are increased sign-up and engagement rates for communities and platf
 
 
 
-High-Level Specifications 
+## High-Level Specifications 
   
 
-System Architecture Diagram
+### System Architecture Diagram
 The diagram below consists of three parts:
 1. Business Client
 Business Client is the partner/3rd Party App. This is the client that needs to Request Access Token and Request Resource from the ResourceServer. The client app can be either a mobile or web-based application.
@@ -145,13 +144,17 @@ humanID implements standard OAuth2 implementation, and hosts OAuth server by def
 3. Resource Server
 Resource Server is the 3rd Party API server that has the resources that are needed by BusinessClient. Hosted by a 3rd Party.
   [c][d][e][f][g][h]
-Step 5 indicates POST request
-humanID Implementation
+
+
+*Step 5 indicates POST request*
+
+
+### humanID Implementation
 To integrate humanID with a 3rd Party App, developers are required to use the humanID developer console. To use the developer console, create a new account by clicking  the “register” button or log in with an existing account.  
 After signing up, developers can create an Application in the Dashboard. An Application is referred to as a Project. Upon creation, the developer will name the Project. Users will see this name when logging in with humanID. It can be changed at any time.
 Developers can customize their applications with options such as Project Icon, Contributors, Redirect URLs, and Credentials.
 Along with these custom options, each application is given an App ID.
-Project Icon
+#### Project Icon
 The Project Icon will be displayed to users who log in through humanID. This icon must be a square PNG, JPG, or JPEG file of a size less than 2MB. If no icon is uploaded, a default icon will be given to the project.
 Contributors
 Contributors can be added by email. This email must be associated with a humanID developer account. Contributors can be added as an Owner, Manager, or Member. Once added, the Project will appear in the contributor’s Dashboard and they will receive an email. Contributors can be edited or deleted, but cannot edit their own permissions.
