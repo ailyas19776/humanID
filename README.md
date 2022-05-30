@@ -43,8 +43,9 @@ humanID's leadership team includes experienced cybersecurity experts, seasoned e
 
 
 
-
-
+<p align="center">
+  <img src="applications_trust_humanID.png" />
+</p>
 
 
 
