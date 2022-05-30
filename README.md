@@ -91,6 +91,12 @@ humanID does not keep user data; privacy is ensured by deleting data after verif
 **Example implementation:**
 
 
+<p align="center">
+  <img src="greenzone.PNG" />
+</p>
+
+
+
 To experience the ease of humanID yourself, try it [here!](https://web-login.human-id.org/demo/)
 
 
@@ -115,6 +121,13 @@ The results are increased sign-up and engagement rates for communities and platf
 
 ## High-Level Specifications 
   
+  
+  
+<p align="center">
+  <img src="high_level_specs.PNG" />
+</p>
+
+
 
 ### System Architecture Diagram
 
@@ -140,6 +153,9 @@ Business Client is the partner/3rd Party App. This is the client that needs to *
 Resource Server is the 3rd Party API server that has the resources that are needed by BusinessClient. Hosted by a 3rd Party.
 
 
+<p align="center">
+<img src="client_server.PNG"/>
+</p>
 
 *Step 5 indicates POST request*
 
@@ -364,7 +380,11 @@ The exchange token will be returned to the EndUser (e.g. web-based app or Androi
 
 **Token Validation**
 humanID provides an API for validating ExchangeToken. This API is called by the 3rd party app server.  humanID determines whether a given ExchangeToken is valid or not.
-  
+ 
+ 
+<p align="center">
+  <img src="exchangetoken.PNG"/> 
+ </p>
 
 <br/>
 
