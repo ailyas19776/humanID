@@ -157,7 +157,7 @@ Resource Server is the 3rd Party API server that has the resources that are need
 <img src="client_server.PNG"/>
 </p>
 
-*Step 5 indicates POST request*
+<p align="center"> <i>Step 5 indicates POST request</i></p>
 
 <br/>
 
