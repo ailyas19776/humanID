@@ -381,13 +381,13 @@ The exchange token will be returned to the EndUser (e.g. web-based app or Androi
 **Token Validation**
 humanID provides an API for validating ExchangeToken. This API is called by the 3rd party app server.  humanID determines whether a given ExchangeToken is valid or not.
  
- 
+<!-- 
 <p align="center">
   <img src="exchangetoken.PNG"/> 
  </p>
 
 <br/>
-
+-->
 ## Conclusion
 ### Our Vision
 humanID battles the dangers of unsafe logins by allowing users to sign in anonymously using the one person, one voice model that has upheld democracies for generations. We care about online communities flourishing, and are using technology to create the visionary online communities of the future. By requiring authentication through a unique phone number and setting strict limits on device switching, we are making it more difficult for cyberbullies, bot accounts, and spammers to abuse websites and apps. 
